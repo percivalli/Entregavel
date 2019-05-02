@@ -6,12 +6,17 @@ public class Professor {
 
     private String nome;
     private String sobrenome;
-    private Integer RP;
+    private Integer tempoCasa;
+    private Integer codigo;
 
-    public Professor(String nome, String sobrenome, Integer RP) {
+    public Professor(String nome, String sobrenome, Integer tempoCasa, Integer codigo) {
         this.nome = nome;
         this.sobrenome = sobrenome;
-        this.RP = RP;
+        this.tempoCasa = tempoCasa;
+        this.codigo = codigo;
+    }
+
+    public Professor() {
     }
 
     public String getNome() {
@@ -31,11 +36,28 @@ public class Professor {
     }
 
     public Integer getRP() {
-        return RP;
+        return tempoCasa;
     }
 
     public void setRP(Integer RP) {
-        this.RP = RP;
+        this.tempoCasa = tempoCasa;
+    }
+
+    public Integer getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    @Override
+    public String toString() {
+        return "Professor" +
+                "\nNome: " + nome +
+                "\nSobrenome: " + sobrenome +
+                "\nCódigo: " + codigo + "\n";
+
     }
 
     @Override
@@ -43,7 +65,7 @@ public class Professor {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Professor professor = (Professor) o;
-        return Objects.equals(RP, professor.RP);
+        return Objects.equals(codigo, professor.codigo);
     }
 
 }

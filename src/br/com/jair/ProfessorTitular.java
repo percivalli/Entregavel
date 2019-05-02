@@ -1,11 +1,10 @@
 package br.com.jair;
 
 public class ProfessorTitular extends Professor {
-
     private String especialidade;
 
-    public ProfessorTitular(String nome, String sobrenome, Integer RP, String especialidade) {
-        super(nome, sobrenome, RP);
+    public ProfessorTitular(String nome, String sobrenome, int codigo, String especialidade) {
+        super(nome, sobrenome, 0, codigo);
         this.especialidade = especialidade;
     }
 
@@ -17,3 +16,4 @@ public class ProfessorTitular extends Professor {
         this.especialidade = especialidade;
     }
 }
+

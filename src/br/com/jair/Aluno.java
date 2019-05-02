@@ -38,6 +38,15 @@ public class Aluno {
     }
 
     @Override
+    public String toString() {
+        return "Aluno" +
+                "\nRA: " + RA +
+                "\nNome: " + nome +
+                "\nSobrenome: " + sobrenome + "\n";
+    }
+
+
+        @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
