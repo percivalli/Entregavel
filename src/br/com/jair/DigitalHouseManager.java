@@ -196,7 +196,7 @@ public class DigitalHouseManager {
 
             if (!matriculado) {
                 System.out.println("Aluno não matriculado!" +
-                        "\n Aluno não está matriculado a nenhum curso!");
+                        "\n Aluno não está matriculado em nenhum curso!");
                 System.out.println(alunos.get(posAluno).toString());
             }
 
